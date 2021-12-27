@@ -1,6 +1,210 @@
 # Реалізація інформаційного та програмного забезпечення
 
-В рамках проекту розробляється: 
-- SQL-скрипт для створення на початкового наповнення бази даних
-- RESTfull сервіс для управління даними
+## SQL-скрипт для створення на початкового наповнення бази даних
 
+```SQL
+insert into source (id, uri, api_key) values (1, 'http://state.tx.us', '208098');
+insert into source (id, uri, api_key) values (2, 'http://pagesperso-orange.fr', '662513');
+insert into source (id, uri, api_key) values (3, 'https://adobe.com', '579381');
+insert into source (id, uri, api_key) values (4, 'https://ibm.com', '196205');
+insert into source (id, uri, api_key) values (5, 'http://dailymail.co.uk', '310191');
+insert into source (id, uri, api_key) values (6, 'https://alibaba.com', '133406');
+insert into source (id, uri, api_key) values (7, 'https://mozilla.com', '128741');
+insert into source (id, uri, api_key) values (8, 'http://ftc.gov', '397721');
+insert into source (id, uri, api_key) values (9, 'http://1und1.de', '137035');
+insert into source (id, uri, api_key) values (10, 'http://opensource.org', '925965');
+insert into source (id, uri, api_key) values (11, 'https://jiathis.com', '647169');
+insert into source (id, uri, api_key) values (12, 'https://1und1.de', '938504');
+insert into source (id, uri, api_key) values (13, 'https://dot.gov', '781693');
+insert into source (id, uri, api_key) values (14, 'https://dailymotion.com', '268877');
+insert into source (id, uri, api_key) values (15, 'http://icio.us', '893784');
+insert into source (id, uri, api_key) values (16, 'https://sohu.com', '331756');
+insert into source (id, uri, api_key) values (17, 'http://examiner.com', '670065');
+insert into source (id, uri, api_key) values (18, 'http://dedecms.com', '635081');
+insert into source (id, uri, api_key) values (19, 'https://lulu.com', '374411');
+insert into source (id, uri, api_key) values (20, 'https://e-recht24.de', '032000');
+insert into source (id, uri, api_key) values (21, 'https://qq.com', '343720');
+insert into source (id, uri, api_key) values (22, 'http://ocn.ne.jp', '606494');
+insert into source (id, uri, api_key) values (23, 'http://paginegialle.it', '830805');
+insert into source (id, uri, api_key) values (24, 'http://lycos.com', '058370');
+insert into source (id, uri, api_key) values (25, 'https://linkedin.com', '864534');
+insert into source (id, uri, api_key) values (26, 'http://si.edu', '821879');
+insert into source (id, uri, api_key) values (27, 'http://merriam-webster.com', '113122');
+insert into source (id, uri, api_key) values (28, 'https://wikia.com', '647575');
+insert into source (id, uri, api_key) values (29, 'https://mit.edu', '257811');
+insert into source (id, uri, api_key) values (30, 'https://nasa.gov', '677476');
+insert into source (id, uri, api_key) values (31, 'https://wisc.edu', '250675');
+insert into source (id, uri, api_key) values (32, 'http://deliciousdays.com', '297390');
+insert into source (id, uri, api_key) values (33, 'https://netlog.com', '005519');
+insert into source (id, uri, api_key) values (34, 'http://devhub.com', '180895');
+insert into source (id, uri, api_key) values (35, 'http://dyndns.org', '708322');
+insert into source (id, uri, api_key) values (36, 'http://guardian.co.uk', '299077');
+insert into source (id, uri, api_key) values (37, 'http://mozilla.com', '686611');
+insert into source (id, uri, api_key) values (38, 'http://spiegel.de', '353637');
+insert into source (id, uri, api_key) values (39, 'https://rediff.com', '926842');
+insert into source (id, uri, api_key) values (40, 'https://census.gov', '477683');
+insert into source (id, uri, api_key) values (41, 'http://wiley.com', '353576');
+insert into source (id, uri, api_key) values (42, 'https://amazon.co.jp', '142262');
+insert into source (id, uri, api_key) values (43, 'http://examiner.com', '970382');
+insert into source (id, uri, api_key) values (44, 'http://zdnet.com', '833886');
+insert into source (id, uri, api_key) values (45, 'https://about.me', '257316');
+insert into source (id, uri, api_key) values (46, 'https://google.ca', '276646');
+insert into source (id, uri, api_key) values (47, 'https://sourceforge.net', '340908');
+insert into source (id, uri, api_key) values (48, 'http://wiley.com', '716738');
+insert into source (id, uri, api_key) values (49, 'http://vinaora.com', '459584');
+insert into source (id, uri, api_key) values (50, 'http://hao123.com', '062534');
+insert into source (id, uri, api_key) values (51, 'https://scientificamerican.com', '376300');
+insert into source (id, uri, api_key) values (52, 'http://rambler.ru', '867991');
+insert into source (id, uri, api_key) values (53, 'http://unicef.org', '358167');
+insert into source (id, uri, api_key) values (54, 'http://geocities.com', '951404');
+insert into source (id, uri, api_key) values (55, 'http://bloomberg.com', '879070');
+insert into source (id, uri, api_key) values (56, 'http://e-recht24.de', '252260');
+insert into source (id, uri, api_key) values (57, 'http://google.co.jp', '971514');
+insert into source (id, uri, api_key) values (58, 'http://goo.gl', '002812');
+insert into source (id, uri, api_key) values (59, 'http://earthlink.net', '227317');
+insert into source (id, uri, api_key) values (60, 'http://barnesandnoble.com', '117160');
+insert into source (id, uri, api_key) values (61, 'https://nhs.uk', '070041');
+insert into source (id, uri, api_key) values (62, 'http://rakuten.co.jp', '918580');
+insert into source (id, uri, api_key) values (63, 'http://shop-pro.jp', '227183');
+insert into source (id, uri, api_key) values (64, 'https://imdb.com', '183722');
+insert into source (id, uri, api_key) values (65, 'https://google.com', '664324');
+insert into source (id, uri, api_key) values (66, 'http://123-reg.co.uk', '761283');
+insert into source (id, uri, api_key) values (67, 'https://apache.org', '724903');
+insert into source (id, uri, api_key) values (68, 'https://nationalgeographic.com', '189373');
+insert into source (id, uri, api_key) values (69, 'https://telegraph.co.uk', '528804');
+insert into source (id, uri, api_key) values (70, 'http://facebook.com', '295677');
+insert into source (id, uri, api_key) values (71, 'http://apple.com', '282783');
+insert into source (id, uri, api_key) values (72, 'http://github.io', '152713');
+insert into source (id, uri, api_key) values (73, 'http://huffingtonpost.com', '568219');
+insert into source (id, uri, api_key) values (74, 'http://japanpost.jp', '690157');
+insert into source (id, uri, api_key) values (75, 'http://businesswire.com', '118872');
+insert into source (id, uri, api_key) values (76, 'https://buzzfeed.com', '120411');
+insert into source (id, uri, api_key) values (77, 'https://aboutads.info', '767644');
+insert into source (id, uri, api_key) values (78, 'http://ehow.com', '809070');
+insert into source (id, uri, api_key) values (79, 'http://etsy.com', '471853');
+insert into source (id, uri, api_key) values (80, 'https://bbb.org', '414815');
+insert into source (id, uri, api_key) values (81, 'https://twitpic.com', '213130');
+insert into source (id, uri, api_key) values (82, 'https://cocolog-nifty.com', '887535');
+insert into source (id, uri, api_key) values (83, 'https://senate.gov', '196332');
+insert into source (id, uri, api_key) values (84, 'https://free.fr', '230257');
+insert into source (id, uri, api_key) values (85, 'https://ucoz.ru', '034865');
+insert into source (id, uri, api_key) values (86, 'http://163.com', '492434');
+insert into source (id, uri, api_key) values (87, 'https://stumbleupon.com', '926646');
+insert into source (id, uri, api_key) values (88, 'http://xrea.com', '373087');
+insert into source (id, uri, api_key) values (89, 'https://blogger.com', '357763');
+insert into source (id, uri, api_key) values (90, 'https://domainmarket.com', '084698');
+insert into source (id, uri, api_key) values (91, 'http://i2i.jp', '747673');
+insert into source (id, uri, api_key) values (92, 'http://miitbeian.gov.cn', '565993');
+insert into source (id, uri, api_key) values (93, 'https://hibu.com', '008852');
+insert into source (id, uri, api_key) values (94, 'https://google.es', '644579');
+insert into source (id, uri, api_key) values (95, 'http://flavors.me', '752491');
+insert into source (id, uri, api_key) values (96, 'http://washington.edu', '731971');
+insert into source (id, uri, api_key) values (97, 'http://addthis.com', '373518');
+insert into source (id, uri, api_key) values (98, 'http://g.co', '157844');
+insert into source (id, uri, api_key) values (99, 'https://jiathis.com', '910825');
+insert into source (id, uri, api_key) values (100, 'http://telegraph.co.uk', '595092');
+```
+## RESTfull сервіс для управління даними
+
+```JS
+const express = require('express');
+const mysql = require('mysql2');
+
+const app = express();
+const jsonParser = express.json();
+
+const dbOptions = {
+    host: 'localhost',
+    user: 'root',
+    password: 'Passwd777!',
+    database: 'mcas'
+};
+
+const dataBase = mysql.createConnection(dbOptions);
+
+app.post('/api/source/post/add', jsonParser, (request, response) => {
+    const source = [request.body.id, request.body.uri, request.body.api_key];
+    const sql = 'insert into source (id, uri, api_key) values (?, ?, ?)';
+
+    dataBase.connect(err => {
+        if (err) throw err;
+        dataBase.query(sql, source, (err, result, field) => {
+            if (err) throw err;
+            result ? response.send(result) : response.sendStatus(404);
+        });
+    });
+});
+
+app.get('/api/source/:id', (request, response) => {
+    const sql = 'SELECT * ' + 
+                'FROM source ' + 
+                `WHERE id = ${request.params.id}`;
+
+    dataBase.connect(err => {
+        if (err) throw err;
+        dataBase.query(sql, (err, result, field) => {
+            if (err) throw err;
+            result ? response.send(result) : response.sendStatus(404);
+        });
+    });
+});
+
+app.get('/api/source/get/all', (request, response) => {
+    const sql = `SELECT * FROM source `;
+
+    dataBase.connect(err => {
+        if (err) throw err;
+        dataBase.query(sql, (err, result, field) => {
+            if (err) throw err;
+            response.send(result);
+        });
+    });
+})
+
+app.put('/api/source/put/update', jsonParser, (request, response) => {
+    const sql = 'UPDATE source ' +
+                'SET id = ?, uri = ?, api_key = ?' +
+                `WHERE id = ${request.body.id}`;
+
+    const source = [request.body.id, request.body.uri, request.body.api_key];
+
+    dataBase.connect(err => {
+        if (err) throw err;
+        dataBase.query(sql, source, (err, result, field) => {
+            if (err) throw err;
+            result ? response.send(result) : response.sendStatus(404);
+        });
+    });
+});
+
+app.delete('/api/source/delete/:id', (request, response) => {
+    const sql = 'DELETE ' + 
+                'FROM source ' + 
+                `WHERE id = ${request.params.id}`;
+
+    dataBase.connect(err => {
+        if (err) throw err;
+        dataBase.query(sql, (err, result, field) => {
+            if (err) throw err;
+            result ? response.send(result) : response.sendStatus(404);
+        });
+    });
+
+});
+
+const PORT = 3000 || process.env.PORT;
+
+try {
+    app.listen(PORT, () => console.log(`Server is running at ${PORT}`));
+} catch (err) {
+    console.log(err);
+}
+```
+### Опис кінцевих точок RESTfull сервісу доступу до даних
+- `/api/source/post/add` - Додати джерело
+- `/api/source/:id` - Отримати джерело за його id
+- `/api/source/get/all` - Отримати всі джерела
+- `/api/source/put/update` - Оновити дані 
+- `/api/source/delete/:id` - Видалити джерело за його id
+
+[Тестування працездатності системи](https://julikss.github.io/media-content-analyzing-system/test/)
